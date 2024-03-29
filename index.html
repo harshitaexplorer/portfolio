@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>harshita's reactive website </title>
+    <link rel="stylesheet" href="styling.css">
+    <script src="https://kit.fontawesome.com/959f335986.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="top">
+        <div class="'inner">
+            <nav>
+                <!----<img src="logo.png" class="logo">----->
+                <ul id="sidemenu">
+                    <li> <a href="#top">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORFOLIO</a></li>
+                    <li><a href="#contact">CONTACE INFO</a></li>
+                    <!--<i class="fa-solid fa-xmark" onclick="closemenu()"></i>-->
+    
+    
+                </ul>
+                <!--<i class="fa-solid fa-bars" onclick="openmenu()"></i>-->
+            </nav>
+            <div class="header">
+                <p>programmer</p>
+                <h1>hey i am <br> <span>harshita</span></h1>
+            </div>
+        </div>
+
+    </div>
+<!-------------about-->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                 <img src="user.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">about me</h1>
+                <p>hey! I am harshita currently an undergrad student in nsut .</p>
+                <div class="tabtitles">
+                    <p class="tab-links activelink" onclick="opentab('skills')">skills</p>
+                    <!--<p class="tab-links" onclick="opentab('experience')">experience</p>-->
+                    <p class="tab-links" onclick="opentab('education')">education</p>
+                </div>
+                <div class="tabcontent activetab" id="skills">
+                    <ul>
+                        <li><span>web development</span><br>html,css javascript</li>
+                        <li><span>DSA</span><br>c++,python,c</li>
+            
+                    </ul>
+                </div>
+                
+                <div class="tabcontent" id="education">
+                    <ul>
+                        <li><span>Netaji Subhas University of Technology</span><br>2022-2026<br>Electronics and communication(7.61gpa)</li>
+                        <li><span>DPS R.K Puram</span><br>pcm,english with computer science<br>2018-2022<br>12th boards:93%<br>10th boards:93.8%</li>
+                        <li><span>Shree Agresen academy,Assam</span><br>A+</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<div id="services">
+   <div class="container">
+    <h1 class="subtitle">services</h1>
+    <div class="services-list">
+        <div>
+            <h1>web development</h2>
+            <p>basics of web development using html,css and javascript.Creating a responsive portfolio website</p>
+            <a href="#">learn more</a>
+        </div>
+        <div>
+            <h1>Codess Cafe: mentee</h2>
+            <p>A community of empowered women in tech</p>
+            <a href="#">learn more</a>
+        </div>
+        
+
+    </div>
+
+      
+   </div>
+</div>
+
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="subtitle">my work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png" >
+                <div class="layer">
+                    <h3>web development </h3>
+                    <p>responsive portfolio website</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png" >
+                <div class="layer">
+                    <h3>WEATHER APP</h3>
+                    <P>weather app using html,css and javascript linked with api gives updated weather information of cities searched</P>
+                </div>
+            </div>
+           <!-- <div class="work">
+                <img src="work-3.png" >
+                <div class="layer">
+                    <h3>Competitive programming</h3>
+                    <p>codechef,leetcode,codeforces</p>
+                </div>
+            </div>-->
+        </div>
+       <a href="#" class="btn">see more</a>
+
+    </div>
+</div>
+
+
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>harshitaghughutiyal@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+91-8233659718</p>
+               <!-- <div class="social-icons">
+                     <a href="<i class="fa-brands fa-linkedin"></i>"></a>
+                     <a href="<i class="fa-brands fa-twitter"></i>"></a>
+                     <a href="<i class="fa-brands fa-linkedin"></i>"></a>
+                     <a href="<i class="fa-brands fa-linkedin"></i>"></a>
+
+                    </div>-->
+            
+            </div>
+            <div class="contact-right">
+                <form name="'submit-to-google-sheet'">
+                    <input type="text" name="name" placeholder="your name" required>
+                    <input type="email" name="email" placeholder="your email" required>
+                    <textarea name="message" id=""  rows="6" placeholder="your message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+    var tablinks=document.getElementsByClassName('tab-links');
+    var tabcontents=document.getElementsByClassName('tabcontent');
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("activelink");
+        }
+        for(tabcontentt of tabcontents){
+            tabcontentt.classList.remove("activetab");
+
+        }
+        document.getElementById(tabname).classList.add("activetab");
+
+           event.target.classList.add("activelink");
+
+    }
+</script>
+
+</body>
+</html>
