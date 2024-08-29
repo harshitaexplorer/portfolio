@@ -48,7 +48,7 @@ nav ul li a::after{
     content:'';
     width: 0;
     height:3px;
-    background: #ff004f;
+    background:#ff004f;
     position:absolute;
     left:0;
     bottom: -6px;
@@ -67,7 +67,7 @@ nav ul li a:hover::after{
     margin: 20px;
 }
 .header h1 span{
-    color: #ff004f;
+    color:#ff004f;
 }
 
 #about{
@@ -88,6 +88,7 @@ nav ul li a:hover::after{
 
 }
 .about-col-2{
+    padding-left:40px;
     flex-basis: 60%;
 }
 .subtitle{
@@ -189,6 +190,29 @@ nav ul li a:hover::after{
     display: block;
     transition: transform 0.5s;
 }
+.platform {
+    display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            list-style: none;
+            cursor: pointer;
+            transition: transform 0.3s ease, font-size 0.3s ease;
+
+}
+.platform p:hover{
+    background-color: #ff004f;
+    padding: 2px;;
+    transform: scale(1.2);
+    font-size: 1.2em;
+}
+.platform p{
+ display: inline-block;
+    background: #262626;
+    padding: 5px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    border-radius: 5px;
+
+}
 .layer{
     width:100%;
     height: 0;
@@ -289,7 +313,6 @@ form .btn2{
 nav .fa-solid{
     display: none;
 }
-
 
 
 
